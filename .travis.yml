@@ -1,0 +1,4 @@
+language:Objective-C
+script:
+  - xctool -project Jumblify.project -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -project Jumblify.project -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
