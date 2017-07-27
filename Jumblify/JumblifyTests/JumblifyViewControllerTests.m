@@ -41,7 +41,7 @@
     NSString *originalString = @"himynameisandy";
     NSString *reversedString = [self.vcToTest reverseString:originalString];
     NSString *expectedReversedString = @"ydnasiemanymih";
-    XCTAssertEqualObjects(expectedReversedString, reversedString, @"The reversed string did not match the expected reverse");
+    XCTAssertEqualObjects(expectedReversedString, reversedString, @"The Reversed string did not match the expected reverse");
 }
 
 - (void)testPerformanceReverseString
