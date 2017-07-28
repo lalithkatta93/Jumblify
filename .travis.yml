@@ -1,4 +1,6 @@
 language: objective-c
+osx_image: xcode8.3
+cache: bundler
 script:
-  - xctool -project Jumblify.xcodeproj -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -project Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - /Users/LalithKatta/Travis/Jumblify/Jumblify/JumblifyTests
+  - /Users/LalithKatta/Travis/Jumblify/Jumblify/Jumblify
