@@ -1,6 +1,2 @@
 language: objective-c
-osx_image: xcode8.3
-cache: bundler
-script:
-  - /Users/LalithKatta/Travis/Jumblify/Jumblify/JumblifyTests
-  - /Users/LalithKatta/Travis/Jumblify/Jumblify/Jumblify
+ 
