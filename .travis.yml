@@ -1,6 +1,5 @@
 language: objective-c
-xcode_project: /Users/LalithKatta/angi/Jumblify/Jumblify/Jumblify.xcodeproj # path to your xcodeproj folder
 xcode_scheme: JumblifyTests
 script:
-  - xctool -project Jumblify.xcodeproj -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -project Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -project Jumblify.xcodeproj -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild test -project Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
