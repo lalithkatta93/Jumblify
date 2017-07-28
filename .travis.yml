@@ -1,5 +1,4 @@
 language: objective-c
-xcode_scheme: JumblifyTests
 script:
-  - xcodebuild -project Jumblify.xcodeproj -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xcodebuild test -project Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool -project Jumblify.xcodeproj -scheme Jumblify -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -project Jumblify.xcodeproj -scheme JumblifyTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
